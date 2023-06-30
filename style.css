@@ -1,0 +1,5 @@
+.container { width: 100%; background-color: blue; }
+
+.container .box { width: 50%; background-color: yellow; }
+
+.container .box .p { color: red; }

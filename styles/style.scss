@@ -1,13 +1,19 @@
-.container {
-  width: 100%;
-  background-color: blue;
-    .box{
-      width: 50%;
-      background-color: yellow;
+@import '_vars';
+@import '_mixins';
+@import 'nav';
+@import 'nav-mobile';
+@import 'header';
+@import 'main';
+@import 'footer';
 
-    .p {
-      color: red;
-    }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-  }
+body {
+  @include flex-center;
+  position: relative;
+  color: color(black, 1);
 }

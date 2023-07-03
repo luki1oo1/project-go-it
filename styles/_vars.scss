@@ -1,0 +1,39 @@
+// section colors
+$colors-stack: (black: (#000000, #333333),
+  white: (#ffffff,
+  ),
+  gray: (#999999,
+    #e7e7e7, #e5e5e5, #cccccc,
+  ),
+  red: (#f38181,
+  ),
+  green: (#95e1d3,
+  ),
+  yellow: (#fce38a,
+  ),
+  transparent: (transparent,
+  ),
+);
+
+/// Returns the appropriate color value from the $color-stact array, its hue, and opacity
+/// @group Base Utils
+///
+/// @param {Unit} $color-id - name color
+/// @param {Unit} $color-tone - number color
+/// @param {Unit} $opacity 
+/// 
+@function color($color-id, $color-tone: 1, $opacity: 1) {
+  @if $color-id==inherit {
+    @return inherit;
+  }
+
+  $tones-map: map-get($colors-stack, $color-id);
+
+  @if $tones-map==null {
+    @error "Color `#{$color-id}` doesn't exist in $colors-stack.";
+  }
+
+  @return if($opacity==1, nth($tones-map, $color-tone), rgba(nth($tones-map, $color-tone), $opacity));
+}
+
+//  end section colors

@@ -1,17 +1,218 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
   <title>Document</title>
 </head>
+
 <body>
-  <div class="container">
-    <div class="box">
-      <div class="p">hjkl</div>
-    </div>
-  </div>
+  <section class="grid-container">
+    <nav class="nav__desktop" role="navigation">
+      <div class="nav__logo">
+        <a href="#">MoGo</a>
+      </div>
+      <div class="nav__container-menu">
+        <ul class="nav__menu">
+          <li><a href="#">About</a></li>
+          <li><a href="#">Service</a></li>
+          <li><a href="#">Work</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+        <div class="nav__icons">
+          <a href="#"><img src="assets/icons/icon_shopping_bag.svg" alt="Bag"></a>
+          <a href="#"><img src="assets/icons/icon_search.svg" alt="Search"></a>
+        </div>
+      </div>
+    </nav>
+    <nav class="nav__mobile" role="navigation">
+      <input type="checkbox" id="menu-toggle">
+      <label for="menu-toggle" class="menu-icon">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+      <ul class="menu">
+        <li><a href="#">About</a></li>
+        <li><a href="#">Service</a></li>
+        <li><a href="#">Work</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+      <div class="icons">
+        <a href="#"><img src="assets/icons/icon_shopping_bag.svg" alt="Bag"></a>
+        <a href="#"><img src="assets/icons/icon_search.svg" alt="Search"></a>
+      </div>
+    </nav>
+    <header>
+      <img src="assets/photos/Layer_15.png" alt="Background header">
+      <div class="block__header-content">
+        <div class="block__header-title">
+          <h2>creative template</h2>
+        </div>
+        <div class="block__header-subtitle">
+          <h1>welcome to mogo</h1>
+        </div>
+        <div class="block__header-button">
+          <a href="#">Learn More</a>
+        </div>
+      </div>
+    </header>
+    <main role="main">
+      <section class="container__information">
+        <div class="head">
+          <h3 class="head__subtitle">We work with</h3>
+          <h2 class="head__title">Amazing services</h2>
+          <hr class="head__divider">
+        </div>
+        <div class="container__offerts">
+          <div class="offerts">
+            <img src="assets/icons/icon_clock.svg" alt="Clock">
+            <div class="offerts__text">
+              <h3 class="offerts__title">Photography</h3>
+              <p class="offerts__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut mauris
+                eros. </p>
+            </div>
+          </div>
+          <div class="offerts">
+            <img src="assets/icons/icon_line.svg" alt="Line graph">
+            <div class="offerts__text">
+              <h3 class="offerts__title">Web Design</h3>
+              <p class="offerts__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut mauris
+                eros. </p>
+            </div>
+          </div>
+          <div class="offerts">
+            <img src="assets/icons/icon_computer.svg" alt="Computer">
+            <div class="offerts__text">
+              <h3 class="offerts__title">Creativity</h3>
+              <p class="offerts__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut mauris
+                eros. </p>
+            </div>
+
+          </div>
+        </div>
+        <div class="container__offerts">
+          <div class="offerts">
+            <img src="assets/icons/icon_book.svg" alt="Book">
+            <div class="offerts__text">
+              <h3 class="offerts__title">seo</h3>
+              <p class="offerts__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut mauris
+                eros. </p>
+            </div>
+          </div>
+          <div class="offerts">
+            <img src="assets/icons/icon_home.svg" alt="Home">
+            <div class="offerts__text">
+              <h3 class="offerts__title">Css/Html</h3>
+              <p class="offerts__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut mauris
+                eros. </p>
+            </div>
+          </div>
+          <div class="offerts">
+            <img src="assets/icons/icon_image.svg" alt="Image">
+            <div class="offerts__text">
+              <h3 class="offerts__title">digital</h3>
+              <p class="offerts__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut mauris
+                eros. </p>
+            </div>
+          </div>
+        </div>
+        <div class="head">
+          <h3 class="head__subtitle">Who we are</h3>
+          <h2 class="head__title">Meet our team</h2>
+          <hr class="head__divider">
+        </div>
+        <p class="container__information-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+          laboris nisi ut aliquip ex ea commodo consequat. </p>
+      </section>
+      <section class="container__persons">
+        <div class="person">
+          <div class="person__img">
+            <img src="assets/photos/Layer_16.png" alt="Person">
+            <div class="person__btns">
+              <a href="">
+                <div class="person__btn person__btn--facebook"></div>
+              </a>
+              <a href="">
+                <div class="person__btn person__btn--twitter"></div>
+              </a>
+              <a href="">
+                <div class="person__btn person__btn--pinterest"></div>
+              </a>
+              <a href="">
+                <div class="person__btn person__btn--instagram"></div>
+              </a>
+            </div>
+          </div>
+          <div class="persons__text">
+            <h3 class="persons__title">Matthew Dix</h3>
+            <p class="persons__description">Graphic Design</p>
+          </div>
+        </div>
+        <div class="person">
+          <div class="person__img">
+            <img src="assets/photos/Layer_19.png" alt="Person">
+            <div class="person__btns">
+              <a href="">
+                <div class="person__btn person__btn--facebook"></div>
+              </a>
+              <a href="">
+                <div class="person__btn person__btn--twitter"></div>
+              </a>
+              <a href="">
+                <div class="person__btn person__btn--pinterest"></div>
+              </a>
+              <a href="">
+                <div class="person__btn person__btn--instagram"></div>
+              </a>
+            </div>
+          </div>
+          <div class="persons__text">
+            <h3 class="persons__title">Christopher Campbell</h3>
+            <p class="persons__description">Branding/UX design</p>
+          </div>
+        </div>
+        <div class="person">
+          <div class="person__img">
+            <img src="assets/photos/Layer_18.png" srcset="assets/photos/Layer_18.png" alt="Person">
+            <div class="person__btns">
+              <a href="">
+                <div class="person__btn person__btn--facebook"></div>
+              </a>
+              <a href="">
+                <div class="person__btn person__btn--twitter"></div>
+              </a>
+              <a href="">
+                <div class="person__btn person__btn--pinterest"></div>
+              </a>
+              <a href="">
+                <div class="person__btn person__btn--instagram"></div>
+              </a>
+            </div>
+          </div>
+          <div class="persons__text">
+            <h3 class="persons__title">Michael Fertig </h3>
+            <p class="persons__description">Developer</p>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer" role="footer">
+      <div class="footer__text">© 2016 MoGo free PSD template by <span>laaqiq</span></div>
+      <div class="footer__form">
+        <input type="text" placeholder="Your Email...">
+        <button class="footer__button">Subscribe</button>
+      </div>
+    </footer>
+  </section>
 </body>
 </html>

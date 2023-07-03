@@ -1,0 +1,105 @@
+body {
+  position: relative;
+  width: 100%;
+
+  header {
+    @include absolute;
+    max-width: 100%;
+    height: auto;
+    z-index: 0;
+    overflow: hidden;
+
+    img {
+      max-width: 100%;
+      height: auto;
+
+      @media screen and (max-width: 1200px) {
+        height: 600px;
+      }
+    }
+
+    &::after {
+      @include absolute;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 1;
+      background: rgb(255, 255, 90);
+      background: linear-gradient(0deg, rgba(255, 255, 90, 0.8673844537815126) 0%, rgba(243, 129, 129, 0.8645833333333334) 100%);
+    }
+
+    .block__header-content {
+      content: '';
+      position: absolute;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      color: color(white);
+      z-index: 2;
+
+      .block__header-title {
+        h2 {
+          font-size: 72px;
+          text-transform: capitalize;
+          text-align: center;
+          margin-bottom: 40px;
+          font-family: "Kaushan Script";
+
+          @media screen and (max-width: 1300px) {
+            font-size: 50px;
+
+          }
+
+          @media screen and (max-width: 500px) {
+            font-size: 30px;
+          }
+        }
+
+      }
+
+      .block__header-subtitle {
+        h1 {
+          margin-bottom: 140px;
+          font-size: 150px;
+          line-height: 140px;
+          font-weight: 700;
+          font-family: Montserrat;
+          text-transform: uppercase;
+          text-align: center;
+
+          @media screen and (max-width: 1300px) {
+            margin-bottom: 60px;
+            font-size: 80px;
+            line-height: 100px;
+          }
+
+          @media screen and (max-width: 500px) {
+            font-size: 50px;
+            line-height: 70px;
+          }
+        }
+
+      }
+
+      .block__header-button {
+        a {
+          padding: 10px 30px;
+          color: color(white);
+          font-size: 14px;
+          border: 3px solid color(white);
+          text-transform: uppercase;
+          text-decoration: none;
+
+          &:hover {
+            color: color(red);
+            border: 3px solid color(red);
+          }
+        }
+      }
+    }
+  }
+}

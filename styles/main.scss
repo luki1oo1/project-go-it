@@ -178,19 +178,19 @@ main {
           background-position: center;
 
           &.person__btn--facebook {
-            background-image: url('../assets/icons/facebook_color.svg');
+            background-image: url('./assets/icons/facebook_color.svg');
           }
 
           &.person__btn--instagram {
-            background-image: url('../assets/icons/instagram_color.svg');
+            background-image: url('./assets/icons/instagram_color.svg');
           }
 
           &.person__btn--twitter {
-            background-image: url('../assets/icons/twitter_color.svg');
+            background-image: url('./assets/icons/twitter_color.svg');
           }
 
           &.person__btn--pinterest {
-            background-image: url('../assets/icons/pinterest_color.svg');
+            background-image: url('./assets/icons/pinterest_color.svg');
           }
 
           &:hover {
@@ -198,19 +198,19 @@ main {
           }
 
           &.person__btn--facebook:hover {
-            background-image: url('../assets/icons/facebook.svg');
+            background-image: url('./assets/icons/facebook.svg');
           }
 
           &.person__btn--instagram:hover {
-            background-image: url('../assets/icons/instagram.svg');
+            background-image: url('./assets/icons/instagram.svg');
           }
 
           &.person__btn--twitter:hover {
-            background-image: url('../assets/icons/twitter.svg');
+            background-image: url('./assets/icons/twitter.svg');
           }
 
           &.person__btn--pinterest:hover {
-            background-image: url('../assets/icons/pinterest.svg');
+            background-image: url('./assets/icons/pinterest.svg');
           }
         }
 
